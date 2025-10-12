@@ -24,6 +24,7 @@ This report explores Australia's energy and emissions trajectory from 1990 to 20
 - [References](#references)
 
 ### Executive Summary
+
 <p align = "center">
 <img src = imgs/net_zero_alignment.png alt = "Net Zero Alignment">
 </p>
@@ -46,7 +47,6 @@ Australia faces the challenge of sustaining economic growth while meeting its cl
 
 To support Australia in meeting its national emissions targets, and to ensure the country’s ongoing competitiveness in an increasing decarbonised global economy, the Safeguard Mechanism was established. Introduced in 2016 under the National Greenhouse and Energy Reporting act 2007 (NGER Act), the Safeguard Mechanism forms a key component of Australia’s climate policy framework. This policy requires Australia’s highest greenhouse gas emitting facilities (*facilities emitting >100,000 tonnes of carbon dioxide equivalent in a year*) to reduce their emissions in alignment of national targets of **43% below 2005 levels by 2030**, and **net zero by 2050**.
 
-
 ### Datasets and Methodology
 
 #### Datasets
@@ -63,8 +63,7 @@ To support Australia in meeting its national emissions targets, and to ensure th
 #### Focus Period
 - **Observed:** 1990 to 2023
 - **Forecast:** 2024 to 2060
-<br>
-
+  
 #### Methods
 - **Exploratory data analysis**
 - **Data visualisation**
@@ -72,12 +71,10 @@ To support Australia in meeting its national emissions targets, and to ensure th
 - **Forecasting:** linear regression for emissions; interpolated pathway for legislated net zero
 - **Budget analysis:** cumulative emissions vs. 10.1 Gt CO<SUB>2</SUB>-e allowance, 2013 to 2050
 - **Policy overlay and interpretation**
-<br>
 
 #### Tools and Libraries
 - **Python**: jupyter notebook, pandas, matplotlib, seaborn, sklearn for linear regression forecasts 
 - **Excel**: compilation of policy timelines
-<br>
 
 ### Analysis and Key Findings
 
@@ -90,19 +87,15 @@ To support Australia in meeting its national emissions targets, and to ensure th
 <br>
 
 #### Emissions Trajectory
+
 How have Australia’s total and sectoral greenhouse gas emissions changed since 1990?
 
-
 ##### Historical Greenhouse Gas Emissions
-
-
 
 <p align = "center">
 <img src = imgs/historical_emissions.png alt = "alt text">
 </p>
 <p align = "center"><small><em>Figure 3: Historical greenhouse gas emissions and key climate policy milestones 1990-2023</em></small></p>
-
-
 
 Figure 3 illustrates Australia’s total greenhouse gas emissions over a 33-year period with key national and international climate and energy policies annotated to provide contextual insight.
 
@@ -113,9 +106,8 @@ Figure 3 illustrates Australia’s total greenhouse gas emissions over a 33-year
         - The gradual decline of emissions from **619.33 Mt CO<SUB>2</SUB>-e to 559.5 Mt CO<SUB>2</SUB>-e** (**9.7%**) between 2008 to 2012 coincides with the **ratification of the Kyoto protocol in 2007** where Australia committed to emissions reduction targets of **108% of 1990 emissions levels** within this time period.
         - This decline further coincides with the introduction of **Renewable Energy Target (RET) in 2009** which has significantly transformed the renewable energy landscape in Australia. The policy aims to reduce greenhouse gas emissions in the electricity sector and increase renewable electricity generation.
         - The Safeguard mechanism, introduced in 2016 and reformed in 2023, set out major reduction targets of **43% below 2005 levels by 2030, and net zero by 2050**. With the exception of the increase in emissions in 2017, the stabilisation of industrial emissions under this act contributed positively to the reduction of greenhouse gas emissions between 2018 and 2023.
-<br>
+
     - **Land use, Land-Use Change and Forestry (LULUCF)**
-    <br> 
         <p align = "center">
         <img src = imgs/lulucf_analysis.png alt = "LULUCF analysis">
         </p>
@@ -125,7 +117,6 @@ Figure 3 illustrates Australia’s total greenhouse gas emissions over a 33-year
         - Whilst Net GHG Emissions trend suggest gradual progress, further analysis indicates that a substantial share of emissions reduction is attributed to LULUCF offsets, rather than reductions from other sectors.
         - When LULUCF is excluded from emissions accounting, the trajectory of emissions tells a different story from that of the Net GHG Emissions; that emissions from other sectors **increased slightly between 2015 to 2018 from 548.21 Mt CO<SUB>2</SUB>-e to 565.8 Mt CO<SUB>2</SUB>-e** followed by a minimal **reduction to 531.94 Mt CO<SUB>2</SUB>-e in 2023**.
         - This deviation highlights the importance of LULUCF in meeting Australia’s reductions targets whilst revealing the structural risk that **Australia’s progress relies heavily on LULUCF offsets** rather than systemic decarbonisation across key emitting sectors.
-<br>
 
 ##### Sectoral Emissions 
 
@@ -157,10 +148,10 @@ Whilst net carbon emissions seem to be on a downward trajectory, Figures 6(a) an
     - As discussed previously, LULUCF emissions have significantly decreased to the point where **LULUCF has transitioned from a source to a net sink**.
 
 These contrasting sectoral emission trends indicate that while national net emissions seem to be declining, this progress has masked **underlying stagnation or growth in several key sectors**. They highlight uneven progress in decarbonisation across the economy and **underscore the need for targeted sector-specific interventions** to drive genuine emissions reduction.
-<br>
 
 #### Energy Transition Progress
 How has Australia’s electricity generation mix evolved, and what is the share of renewables today?
+
 ##### Renewables vs Fossils (1990 vs 2023)
 
 <p align = "center">
@@ -193,27 +184,29 @@ Figures 8(a) and 8(b) show the evolution of Australia’s generation mix and sou
 Figures 9(a) and 9(b) show the state of Australia's Energy Generation mix in 2023. It highlights Coal as the dominant generation source and the position of Solar as the 3rd largest source of Australian energy and the largest renewable energy source.
 
 ##### Fossil Fuels’ role in the Generation Mix
+
 - Historically, Coal has dominated Australia’s energy generation landscape, responsible for ~**70.4% of electricity generated between the 1990-2023** period *(Table 1)*. Figures 8(a) and 8(b) show that coal generation **peaked in 2007 at 186,744 GWh**, then declined to **127,633 GWh in 2023**; a **reduction of 31.7%**. Additionally, its share in the generation mix, has been steadily declining during the 33-year analysis period from **78.3% in 1990** to **46.5% in 2023**; a **reduction of 40.6%**. This decline in share and generation correlates with the introduction of policies such as RET, which incentivises the generation and use of renewable energy alternatives. 
 - Natural Gas’s electricity generation saw a major increase (**284.5%**) between 1990 to its peak in 2020 from **14,359 GWh to 55,216 GWh** respectively. Following its 2020 peak, generation **fell by 11.5% to 48,865 GWh in 2023**. During the 1990 to 2023 period, natural gas’ generation share **increased from 9.3% to 17.8%**, making it Australia’s 2nd largest source of electricity.
 - Oil products, only accounting for **1.5% of Australia’s total generation** within the 33-year period, has historically played a minor role in Australia’s electricity mix, and continues to decline in relevance from **2.3% in 1990** to **1.8% in 2023**.
+  
 <p align = "center">
 <img src = imgs/electricity_generation_summary_table.png alt = "Sectoral emissions indexed">
 </p>
 <p align = "center"><small><em>Table 1: Australia's electricity generation mix statistics</em></small></p>
 
 Table 1 summarises Australia’s electricity generation mix by source, reporting total electricity generation output and each sources share of the total electricity generated between 1990 to 2023, along with their ranks according to individual contributions.
+
 ##### The role of Renewables in the Generation Mix and the expansion of Wind and Solar
+
 ###### Hydropower
+
 - Historically, hydropower has served as a consistent renewable electricity generation source, with generation ranging between **14,880 GWh to 16,933 GWh** throughout the 1990 to 2006 period. Despite its position as the third largest electricity generation source during the 33-year analysis period, post 2006 saw a decline in generation output, reaching a low of **11,869 GWh in 2009**, which coincides with a prolonged period of drought that impacted water availability.
-
 - Since then, generation has gradually recovered, reaching **16,666 GWh in 2023**, despite fluctuations in trends which can be tied to rainfall variability. Notably, **2013 and 2014 were peak years**, where generation surpassed **18,200 GWh**, reflecting temporary recovery during wetter periods.
-
 - Hydropower’s share of electricity generation, however, has followed a **decreasing trend from 9.6% in 1990 to 6.1% in 2023**, with its lowest share of **4.5% being recorded in 2009**. This **3.5% decrease in share** coupled with the decline in its absolute generation, reflects the **relative stagnation of hydropower** amidst the rapid growth of newer technologies such as wind and solar.
-
 - The decline in hydropower’s share reflects both the physical limitations imposed by rainfall fluctuations, and the increased cost-competitiveness and scalability of newer technologies, particularly, solar. Whilst the future of hydropower seems constrained, it will always remain a valuable renewable energy source due to its flexibility and storage capacity.
-<br>
 
 ###### Wind Energy Growth
+
 - Wind electricity generation has experienced exponential growth in both its output and generation share during the 33-year analysis period. **In 2023, wind energy generated 31,385 GWh**, which accounted for **11.4% of the generation mix**, cementing it as the 2nd largest renewable generation source for that year.<br>
 - Despite its position behind solar in 2023, wind power has cumulatively generated **~225 TWh** of electricity between 1990 to 2023, **surpassing solar in cumulative output, and placing it as the second largest historical renewable energy source, behind hydropower**.<br>
 - Wind power’s expansion has been facilitated by:
@@ -231,11 +224,11 @@ Table 1 summarises Australia’s electricity generation mix by source, reporting
 <p align = "center"><small><em>Figure 11: Annual growth of wind and solar electricity generation 2000-2023</em></small></p>
 
 Figures 10 and 11 emphasise the growth of wind and solar in the 2000’s and the year-on-year growth in these sources within this period. These figures highlight the impact of the RET and solar credits scheme.
-<br>
 
 ###### Solar Power Expansion
+
 - Solar power has experienced **significantly steeper exponential growth in both its absolute generation and share**, from **near zero in 1990** to a generation output and share of **41,969 GWh and 15.3% in 2023** respectively. This rapid expansion placed solar power as **Australia’s third largest electricity source, and the leading renewable generator**. Its numerous benefits include its abundance, cost-effectiveness, and environmentally friendly nature.
-<br>
+
 <p align = "center">
 <img src = imgs/large_vs_small_scale_solar.png alt = "Sectoral emissions indexed">
 </p>
@@ -252,10 +245,10 @@ Figures 10 and 11 emphasise the growth of wind and solar in the 2000’s and the
         - This scheme incentivizes renewable energy investment and development through the use of large-scale generation certificates (LGCs).
 
 ###### Bioenergy
+
 - Bioenergy, a broad term used to encompass biogas and biomass such as bagasse and wood, despite achieving growth of **312.4% from 1990 generation levels**, continues to function as a niche contributor relative to wind and solar, accounting for only **1.1% of Australia’s generation mix in 2023**.
 
 Australia’s electricity sector has undergone significant transformation over the past three decades. The implementation of major policies such as the RET have given rise to increased renewable electricity penetration, namely, wind and solar. While fossil fuels still dominate, their share of the generation mix has **decreased from 89.9% to 66.1%**. Renewables now account for **33.9% of total electricity generation**, and continued policy and infrastructure investments will be essential to maintain momentum toward net zero.
-
 
 ### Economic Growth vs Emissions
 
@@ -266,14 +259,15 @@ Is there evidence of decoupling between economic growth and emissions?
 </p>
 <p align = "center"><small><em>Figure 13: Relationship between Australia's economic growth and greenhouse gas emissions 1990-2023</em></small></p>
 
-
 Figure 13 explores the relationship between Australia’s economic growth and greenhouse gas emissions between 1990 to 2023, with the aim of assessing whether decoupling has occurred.
 
 #### Economic Growth
+
 -  Australia has experienced steady economic growth (**159.6%**) between the 1990 to 2023 period with its GDP increasing from **\$926 billion in 1990** to **\$2,403 billion or \$2.4 trillion in 2023**.
 -  Despite linear growth in its population from **17 million to 26.7 million** *(Figure A3)*, its GDP per capita **increased by 66.2%** from **\$54,260 to \$90,162**.
 
 #### Emissions Trajectory
+
 -  Over the 33-year period, total greenhouse gas emissions **declined by 28.4%**, from **619.18 Mt CO<SUB>2</SUB>-e to 443.57 Mt CO<SUB>2</SUB>-e**.
 -  Emissions per capita **fell by 54.1%** from **36.3 tonnes per person to 16.6 tonnes per person**.
 
@@ -295,12 +289,9 @@ Figure 14 summarises the percentage change in the four-core economic and emissio
 </p>
 <p align = "center"><small><em>Figure 15: Indexed GDP vs emissions and emissions intensity 1990-2023</em></small></p>
 
-
 Figure 15(a) and 15(b) highlight decoupling trends between Australia’s economic growth and emissions and decreasing emissions intensity respectively.
 -  Between 1990 to 2023, there has been a clear **divergence between Australia’s GDP and emissions**. While GDP increased to **259.6% of its 1990 value**, emissions declined to **71.6%**. This decline in emissions despite continued economic growth highlights the **presence of absolute decoupling**.
 -  Australia’s emissions intensity **fell by 72.4%** from **0.67 kgCO₂-e per dollar AUD in 1990** to **0.18 kgCO₂-e per dollar AUD in 2023**. This reduction implies increased resource use efficiency, and the adoption of cleaner, more sustainable energy sources and industrial practices.
-
-
 
 ### Net Zero Alignment
 
@@ -316,11 +307,13 @@ Based on current trends, is Australia on track to meet its 2050 net zero target?
 As depicted previously, Figure 1 demonstrates how Australia is tracking towards its emissions targets, in addition to forecasting based on current trajectories. It contextualises whether current reductions sufficiently align with legislated emissions targets.
 
 #### The 2021-2030 Emissions Budget
+
 Australia’s 43% below 2005 levels by 2030 legislated commitment corresponds to a cumulative emissions budget of **4,381 Mt CO<SUB>2</SUB>-e for the 2021 to 2030 period**.
 -  Between 2021 to 2023, Australia emitted approximately **1,326.49 Mt CO<SUB>2</SUB>-e**, consuming **30.3% of its emissions budget**. This leaves Australia with a budget of approximately **3,054.51 Mt CO<SUB>2</SUB>-e (69.7%)** for the 2024-2030 period.
 -  Based on current emissions trajectory, Australia is projected to **achieve its 2030 reduction target** of 43% below 2005 levels by 2030. Projected cumulative emissions to 2030 are expected to remain within the 2021 to 2030 budget, with approximately **353.76 Mt or 8.1% of the budget remaining**.
 
 #### Net Zero Alignment
+
 -  Current projections indicate that if no additional measures are implemented, **Australia would not achieve its target of net zero by 2050**. 
 -  They indicate that Australia would **overshoot its 2050 goal by approximately 98.1 Mt CO<SUB>2</SUB>-e, achieving net zero by the year 2058**, nearly a decade later than planned.
 -  This highlights a gap between present policy measures and the level of decarbonisation required to achieve alignment with Australia’s long term climate commitments.
@@ -351,12 +344,13 @@ Figure 16 plots Australia’s cumulative emissions against its long-term global 
 
 
 ### Conclusion
+
 Australia has successfully initiated decoupling of emissions from economic growth and significantly increased renewable energy adoption. Despite this, current trends indicate that without enhanced policy measures and targeted interventions, **the country is unlikely to meet its legislated net zero target and is likely to exceed its fair-share carbon budget**. Without accelerated action:
 - **The carbon budget will be exhausted by 2037**, leaving no remaining allowance for 2040's emissions.
 - The legislated net zero policy pathway **overshoots the budget by 14.2%** by 2050.
 - Delayed reductions mean **net zero is not achieved until 2058**, eight years beyond target.
 
-**Recommendations:**<br>
+**Recommendations:**
 1. **Accelerate renewable deployment** specifically in the Electricity and Stationary Energy sectors.
 2. **Accelerate electrification** of the transport industry.
 3. **Strengthen safeguards** – enforce steeper declines in facility-level baselines.
@@ -434,5 +428,6 @@ https://www.energy.gov.au/publications/australian-energy-update-2024
 - Parliament of Australia, Senate Environment and Communications References Committee. (n.d.). *Chapter 2 - The Energy White Paper*
 https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/Completed_inquiries/2004-07/energywhitepaper/report/c02
 - United Nations Treaty Collection. (1997, December 11). *Kyoto Protocol to the United Nations Framework Convention on Climate Change*. https://treaties.un.org/pages/viewdetails.aspx?src=treaty&mtdsg_no=XXVII-7-a&chapter=27&clang=_en
+
 
 
