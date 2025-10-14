@@ -22,7 +22,7 @@ I enjoy working with data to generate insights, create impactful visualisations,
 
 #####  [1. Australia's Energy Transition & Emissions Pathway (1990-2023)](Python)
 
-Examines Australia's emissions, energy mix, and economic growth to assess progres towards the 2050 Net Zero target. Integrates national datasets, policy timelines, and statistical forecasting to identify where emissions reductions align or diverge from climate commitments, providing actionable insights for sustainability and energy-market analysis.
+Examines Australia's emissions, energy mix, and economic growth to assess progress towards the 2050 Net Zero target. Integrates national datasets, policy timelines, and statistical forecasting to identify where emissions reductions align or diverge from climate commitments, providing actionable insights for sustainability and energy-market analysis.
 
 _Tools: pandas, numpy, matplotlib, seaborn, sklearn_
 
@@ -48,5 +48,6 @@ _Tools: pandas, numpy, matplotlib, seaborn, sklearn_
 
 - [LinkedIn](https://www.linkedin.com/in/jade-mendoza-headley)
 - Email: jadeymendoza@gmail.com
+
 
 
